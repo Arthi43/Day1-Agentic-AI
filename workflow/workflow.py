@@ -8,7 +8,7 @@ print("Student Assignment Workflow")
 question = input("Ask your question: ")
 
 if "pending" in question.lower():
-    print("Your pending assignments are:")
+    print("\nYour pending assignments:")
 
     for item in assignments:
         if item["status"] == "pending":
@@ -20,4 +20,4 @@ if "pending" in question.lower():
                 item["due_date"]
             )
 else:
-    print("Sorry, this workflow only handles pending assignments.")
+    print("\nSorry, this workflow only handles pending assignments.")
